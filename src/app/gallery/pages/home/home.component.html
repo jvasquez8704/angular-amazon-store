@@ -1,0 +1,16 @@
+<shared-menubar></shared-menubar>
+  
+<main role="main" class="container">
+  
+    <div class="row p-3">
+        <div class="col-12">
+          <category-list [categories]="categories"></category-list>
+        </div>
+      
+        <div class="col-12 pt-2">
+          <gallery-card [application]="application" [rating]="rate"></gallery-card>
+          <gallery-grid [apps]="apps" (selectedApp)="getEmmiter($event)"></gallery-grid>
+        </div>
+    </div>
+
+</main>

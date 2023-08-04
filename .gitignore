@@ -1,0 +1,33 @@
+# Ignore general OS and editor files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Ignore build and compiled files
+/dist/
+/out/
+/build/
+/node_modules/
+/target/
+*.jar
+
+# Ignore Angular specific files
+.angular-cli.json
+.angular-config.json
+*.js.map
+*.js.map.*
+*.js.d.ts
+
+# Ignore Spring Boot specific files
+/.mvn/
+*.iml
+*.jar
+
+# Ignore environment-specific files (you may customize this)
+/src/environments/*.js
+/src/environments/*.js.map
+
+# Ignore any other project-specific files or folders that you want to exclude

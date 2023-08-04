@@ -1,0 +1,25 @@
+<div class="row">
+
+    <div *ngFor="let app of apps"  class="col-md-3 col-sm-6" data-toggle="modal" data-target="#exampleModal">
+  
+      <div class="card mb-2 text-center bg-dark" (click)="selectApp(app)">
+  
+        <img
+          [src]="app.image"
+          [alt]="app.name"
+          class="card-img-top"
+        >
+  
+        <div class="card-body text-white">
+          <h3> {{ app.name }} </h3>
+          <p>{{app.creator_name}}</p>
+          <span>{{app.rate}}</span>
+          <h5>${{app.price}}</h5>
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  
+  </div>
